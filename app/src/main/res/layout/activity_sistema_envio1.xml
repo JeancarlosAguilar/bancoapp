@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E4E4"
+    tools:context=".activity.sistema.SistemaEnvio1Activity">
+
+    <Button
+
+        android:id="@+id/btn_sistemaenvio_volver"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:backgroundTint="#FFE4E4E4"
+        android:text="Volver"
+        android:textAllCaps="false"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/sistemainicio_gl5"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio_gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio_gl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemainicio_gl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemainicio_gl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemainicio_gl7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemainicio_gl8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemainicio_gl9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemainicio_gl10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.845" />
+
+    <ImageView
+        android:id="@+id/img_logo4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sistemainicio_gl5"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio_gl4"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_negro" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_msg1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="ENVIAR PLATA"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl5" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_msg2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Valor"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toBottomOf="@+id/sistemaenvio_msg1" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_fondo1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toTopOf="@+id/sistemainicio_gl7"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio_gl4"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl6" />
+
+
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Ingrese el valor a enviar"
+        android:inputType="number"
+        android:maxLength="7"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/sistemainicio_gl7"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio_gl4"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl6" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_fondo2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl10" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FFE4E4E4"
+        android:text="Siguiente"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio_gl4"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl10" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/sistemainicio_gl6"
+        app:layout_constraintEnd_toStartOf="@+id/sistemainicio_gl9"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl8">
+
+        <TextView
+            android:id="@+id/sistemaenvio_msg3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Número de producto" />
+
+        <TextView
+            android:id="@+id/sistemaEnvioNumeroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/sistemainicio_gl6"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio_gl4"
+        app:layout_constraintStart_toStartOf="@+id/sistemainicio_gl9"
+        app:layout_constraintTop_toTopOf="@+id/sistemainicio_gl8">
+
+        <TextView
+            android:id="@+id/sistemaenvio_msg4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Número de producto" />
+
+        <TextView
+            android:id="@+id/sistemaEnvioSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="$"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E4E4"
+    tools:context=".activity.sistema.SistemaEnvio2Activity">
+
+    <Button
+        android:id="@+id/btn_sistemaenvio_volver"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:backgroundTint="#FFE4E4E4"
+        android:text="Volver"
+        android:textAllCaps="false"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/sistemaenvio2_gl4"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_fondo3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sistemaenvio2_gl8" />
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFE4E4E4"
+        android:text="Confirmar"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancelar"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio2_gl2"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemaenvio2_gl8" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFE4E4E4"
+        android:text="Cancelar"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio2_gl2"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_confirmar" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toTopOf="@+id/sistemaenvio2_gl6"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio2_gl2"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemaenvio2_gl7" />
+
+    <EditText
+        android:id="@+id/etCeluarDestino"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Número de la cuenta"
+        android:inputType="number"
+        android:maxLength="11"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/sistemaenvio2_gl6"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio2_gl2"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio_fondo"
+        app:layout_constraintTop_toTopOf="@+id/sistemaenvio2_gl7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sistemaenvio2_gl8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <ImageView
+        android:id="@+id/img_logo5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sistemaenvio2_gl4"
+        app:layout_constraintEnd_toStartOf="@+id/sistemaenvio2_gl2"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_negro" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="ENVIAR PLATA"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toTopOf="@+id/sistemaenvio2_gl4" />
+
+    <TextView
+        android:id="@+id/sistemaenvio_msg5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Producto destino"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sistemaenvio2_gl1"
+        app:layout_constraintTop_toBottomOf="@+id/sistemaenvio_msg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
